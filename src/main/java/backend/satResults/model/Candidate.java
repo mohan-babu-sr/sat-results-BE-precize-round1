@@ -3,8 +3,6 @@ package backend.satResults.model;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import java.util.Arrays;
-
 @Document(collection = "candidate")
 public class Candidate {
 
