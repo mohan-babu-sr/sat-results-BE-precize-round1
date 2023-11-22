@@ -23,6 +23,7 @@ public class PostController {
 
     @PostMapping("/addCandidate")
     public Candidate addCandidate(@RequestBody Candidate candidate){
+        candidate.setPass(candidate.getSatScore() > 30);
         return postRepository.save(candidate);
     }
 }

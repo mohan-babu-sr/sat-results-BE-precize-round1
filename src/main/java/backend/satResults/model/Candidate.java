@@ -16,6 +16,7 @@ public class Candidate {
     private String country;
     private int pincode;
     private int satScore;
+    private boolean pass;
 
     public String getId() {
         return id;
@@ -73,6 +74,14 @@ public class Candidate {
         this.satScore = satScore;
     }
 
+    public boolean isPass() {
+        return pass;
+    }
+
+    public void setPass(boolean pass) {
+        this.pass = pass;
+    }
+
     @Override
     public String toString() {
         return "Candidate{" +
@@ -83,6 +92,8 @@ public class Candidate {
                 ", country='" + country + '\'' +
                 ", pincode=" + pincode +
                 ", satScore=" + satScore +
+                ", pass=" + pass +
                 '}';
     }
+
 }
