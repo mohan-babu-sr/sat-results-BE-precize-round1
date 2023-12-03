@@ -1,11 +1,11 @@
-# Fetching latest version of Java
+# Fetching the latest version of Java
 FROM openjdk:11
  
-# Setting up work directory
+# Setting up the work directory
 WORKDIR /app
 
 # Copy the JAR file into our app
-COPY ./target/spring-0.0.1-SNAPSHOT.jar /app/
+COPY target/spring-0.0.1-SNAPSHOT.jar /app/
 
 # Display the contents of the /app directory
 RUN ls -la /app
